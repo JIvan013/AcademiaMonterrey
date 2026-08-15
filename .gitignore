@@ -1,0 +1,10 @@
+bin/
+.settings/
+.classpath
+.project
+semana 1/.metadata/
+**/.metadata/
+**/bin/
+**/.settings/
+**/.classpath
+**/.project
