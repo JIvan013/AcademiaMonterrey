@@ -2,4 +2,6 @@
 Xideral Project
 Proyectos para la capcitacion de Academia Monterrey Xideral
 
-1- En la semana 1 se genero el proyecto se sistema e-commerce donde se puede agregar items, agregar a carrito y pagar con 2 metodos de pago
+1- Sistema E-commerce
+
+Programa de una tienda en Java que permite administrar un catálogo de productos, agregar artículos a un carrito, consultar el total y procesar compras mediante diferentes métodos de pago.
