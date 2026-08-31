@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.academymty</groupId>
+	<artifactId>procesador-pedidos</artifactId>
+	<version>1.0.0</version>
+	<name>procesador-pedidos</name>
+	<description>Core avanzado 01 - Hilos, archivos NIO y serializacion</description>
+
+	<properties>
+		<maven.compiler.release>21</maven.compiler.release>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+
+	<!-- Sin dependencias externas: todo lo usado (ExecutorService, AtomicInteger,
+	     java.nio.file.Files, ObjectOutputStream/ObjectInputStream) viene en el JDK. -->
+
+	<build>
+		<finalName>procesador-pedidos</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<version>3.5.0</version>
+				<configuration>
+					<mainClass>com.academymty.concurrencia.Main</mainClass>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
