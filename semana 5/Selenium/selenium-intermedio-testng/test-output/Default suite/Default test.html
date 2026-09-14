@@ -1,0 +1,321 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>8/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Sep 08 17:03:14 CST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>297 seconds (297770 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPersonasHelpAndBenefits()'><b>shouldNavigateThroughPersonasHelpAndBenefits</b><br>Test class: tests.SantanderNavigationTest</td>
+<td><div><pre>java.lang.AssertionError: The following asserts failed:
+	Personas - Regulación falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.C5E6D14E2352A78345EADEB690370249.e.953}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;tramite-por-defuncion.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Select falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.1106F2821E675C61076967BDEE062506.e.1045}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;select.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Promociones falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.16AF9223061E7E74AA7DAE5391A778FB.e.1133}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href$=&apos;promociones/&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Unique Rewards falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.79220EACD8C338CAE1EF351CA3BF2C11.e.1222}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;uniquerewards&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Colectivos falló -&gt; ElementNotInteractableException: element not interactable: element has zero size
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.2A5A4FB19B2E8A88955BEA43B9571243.e.1311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;colectivos.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Mundo Hogar falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.6729A3E1A51C072CA4E3FB33BE8FF450.e.1402}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;mundohogar&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Cashback falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.F76C4C4456BB10D498B49BA2E09565D7.e.1494}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;cashback.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.SantanderNavigationTest.shouldNavigateThroughPersonasHelpAndBenefits(SantanderNavigationTest.java:125)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1656059001", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1656059001'><pre>java.lang.AssertionError: The following asserts failed:
+	Personas - Regulación falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.C5E6D14E2352A78345EADEB690370249.e.953}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;tramite-por-defuncion.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Select falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.1106F2821E675C61076967BDEE062506.e.1045}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;select.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Promociones falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.16AF9223061E7E74AA7DAE5391A778FB.e.1133}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href$=&apos;promociones/&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Unique Rewards falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.79220EACD8C338CAE1EF351CA3BF2C11.e.1222}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;uniquerewards&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Colectivos falló -&gt; ElementNotInteractableException: element not interactable: element has zero size
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.2A5A4FB19B2E8A88955BEA43B9571243.e.1311}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;colectivos.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Mundo Hogar falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.6729A3E1A51C072CA4E3FB33BE8FF450.e.1402}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;mundohogar&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615,
+	Personas - Cashback falló -&gt; ElementNotInteractableException: element not interactable
+  (Session info: chrome=153.0.8010.28)
+Build info: version: &apos;4.35.0&apos;, revision: &apos;1c58e5028b&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.12&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bb3754cd0f65bd5ee53ad4fac2fed615, clickElement {id=f.DEED5F43A53526B46E1F4D3A029C2896.d.F76C4C4456BB10D498B49BA2E09565D7.e.1494}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 153.0.8010.28, chrome: {chromedriverVersion: 153.0.8010.12 (971a7443b0c9..., userDataDir: C:\Users\admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:51892}, goog:processID: 12284, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:51892/devtoo..., se:cdpVersion: 153.0.8010.28, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:cmtgKey: true, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bb3754cd0f65bd5ee53ad4fac2fed615)] -&gt; css selector: a[href*=&apos;cashback.html&apos;]]
+Session ID: bb3754cd0f65bd5ee53ad4fac2fed615
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:46)
+	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:30)
+	at tests.SantanderNavigationTest.shouldNavigateThroughPersonasHelpAndBenefits(SantanderNavigationTest.java:125)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>48</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPersonasDigitalChannels()'><b>shouldNavigateThroughPersonasDigitalChannels</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>12</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPersonasInvestmentsAndInsurance()'><b>shouldNavigateThroughPersonasInvestmentsAndInsurance</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>34</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateToBancaPrivadaOption()'><b>shouldNavigateToBancaPrivadaOption</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>4</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughEmpresasOptions()'><b>shouldNavigateThroughEmpresasOptions</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>8</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPersonasAccountOptions()'><b>shouldNavigateThroughPersonasAccountOptions</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>21</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPymesOptions()'><b>shouldNavigateThroughPymesOptions</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>48</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughAcercaDelBancoOptions()'><b>shouldNavigateThroughAcercaDelBancoOptions</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>40</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+<tr>
+<td title='tests.SantanderNavigationTest.shouldNavigateThroughPersonasCreditOptions()'><b>shouldNavigateThroughPersonasCreditOptions</b><br>Test class: tests.SantanderNavigationTest</td>
+<td></td>
+<td>25</td>
+<td>tests.SantanderNavigationTest@34e9fd99</td></tr>
+</table><p>
+</body>
+</html>
